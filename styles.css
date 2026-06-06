@@ -711,8 +711,24 @@ figcaption {
   padding-top: 14px;
 }
 
-.lab-details p {
+.lab-details p,
+.rack-list {
   color: var(--muted);
+}
+
+.rack-list {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  font-size: 0.96rem;
+}
+
+.rack-list li + li {
+  margin-top: 4px;
+}
+
+.rack-note {
+  margin-top: 12px;
+  font-size: 0.94rem;
 }
 
 .highlights {

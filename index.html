@@ -284,9 +284,9 @@
       <div class="lab-layout">
         <figure class="lab-photo">
           <a class="image-link" href="assets/proof/home-rack-netapp-lab.jpg" target="_blank" rel="noopener">
-            <img src="assets/proof/home-rack-netapp-lab.jpg" alt="Luke Lavender home lab rack with NetApp storage, Dell servers, switching, patch panels, and KVM console">
+            <img src="assets/proof/home-rack-netapp-lab.jpg" alt="Luke Lavender home lab rack with Cisco routing, switching, NetApp SAN, TrueNAS flash storage, and UCS equipment">
           </a>
-          <figcaption>Home rack with NetApp storage, Dell rack servers, Cisco switching, patching, cable management, and KVM access.</figcaption>
+          <figcaption>Home rack with Cisco security and routing, wireless controllers, core switching, NetApp SAN, TrueNAS flash storage, Nexus, Fabric Interconnects, and UCS blade chassis.</figcaption>
         </figure>
         <div class="lab-copy">
           <p>
@@ -297,11 +297,25 @@
           <div class="lab-details">
             <article>
               <h3>Equipment in the rack</h3>
-              <p>NetApp storage system, Dell PowerEdge rack servers, Cisco switching, patch panels, SFP/fiber and copper uplinks, rack KVM console, cable management, and mixed server/network gear.</p>
+              <p>Top-to-bottom rack inventory:</p>
+              <ol class="rack-list">
+                <li>Cisco ASA</li>
+                <li>Cisco ASR</li>
+                <li>Cisco Wireless LAN Controllers</li>
+                <li>Core stack of Cisco Catalyst 3750-X switches</li>
+                <li>Rack KVM</li>
+                <li>NetApp controller</li>
+                <li>NetApp disk shelf</li>
+                <li>Dell PowerEdge TrueNAS all-flash storage server with fabric connections</li>
+                <li>Cisco Nexus 5K</li>
+                <li>Pair of Cisco Fabric Interconnects</li>
+                <li>Cisco UCS blade chassis</li>
+              </ol>
+              <p class="rack-note">The UCS blades were not built around local server disks. Boot and flash storage were served from TrueNAS, while larger high-speed shared storage lived on the NetApp SAN.</p>
             </article>
             <article>
               <h3>Why the NetApp mattered</h3>
-              <p>Working NetApp SAN gear is not normal homelab equipment because licensing, support access, power, noise, and setup friction stop a lot of home labbers. I was able to responsibly reuse decommissioned storage from a colo datacenter, keep it useful, and learn from equipment that otherwise could have become e-waste.</p>
+              <p>Working NetApp SAN gear is not normal homelab equipment because firmware, vendor licensing, support access, power, noise, and setup friction stop a lot of home labbers. The difference was legitimate professional IT access to vendor resources used for real support work, plus the patience to handle the firmware, licensing, and compatibility details. I was able to responsibly reuse decommissioned storage from a colo datacenter, keep it useful, and learn from equipment that otherwise could have become e-waste.</p>
             </article>
             <article>
               <h3>What I labbed</h3>
