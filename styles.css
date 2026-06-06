@@ -321,6 +321,19 @@ h3 {
   align-items: center;
 }
 
+.feature-card.wide.proof-focus {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  align-items: center;
+}
+
+.feature-card.proof-focus img {
+  height: auto;
+  max-height: min(58vh, 620px);
+  object-position: center;
+}
+
 .feature-card.photo-priority .image-link {
   display: flex;
   align-items: center;
@@ -877,6 +890,10 @@ figcaption {
   }
 
   .feature-card.wide.photo-priority {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card.wide.proof-focus {
     grid-template-columns: 1fr;
   }
 
