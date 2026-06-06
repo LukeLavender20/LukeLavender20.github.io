@@ -102,40 +102,47 @@ nav a:focus-visible {
 
 .hero-image {
   z-index: 0;
-  right: clamp(16px, 5vw, 72px);
+  inset: auto clamp(18px, 4vw, 56px) clamp(28px, 5vh, 52px) auto;
   left: auto;
-  width: min(38vw, 480px);
-  height: 100%;
+  width: clamp(260px, 31vw, 430px);
+  height: auto;
+  max-height: calc(100% - 110px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  background: #101719;
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.42);
   object-fit: contain;
   object-position: center bottom;
   filter: saturate(0.98) contrast(1.02);
 }
 
 .hero-secondary-image {
-  z-index: 2;
-  inset: auto auto clamp(46px, 8vh, 84px) clamp(18px, 4vw, 58px);
-  width: clamp(230px, 29vw, 390px);
+  z-index: 0;
+  inset: auto auto clamp(52px, 8vh, 90px) clamp(18px, 4vw, 56px);
+  width: clamp(300px, 34vw, 480px);
   height: auto;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
+  background: #101719;
   box-shadow: 0 24px 58px rgba(0, 0, 0, 0.42);
-  filter: saturate(0.96) contrast(1.06);
-  opacity: 0.9;
+  filter: saturate(0.98) contrast(1.05);
+  opacity: 0.94;
 }
 
 .hero-shade {
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(10, 16, 18, 0.72) 0%, rgba(10, 16, 18, 0.78) 44%, rgba(10, 16, 18, 0.22) 100%),
+    linear-gradient(90deg, rgba(10, 16, 18, 0.38) 0%, rgba(10, 16, 18, 0.84) 34%, rgba(10, 16, 18, 0.84) 62%, rgba(10, 16, 18, 0.22) 100%),
     linear-gradient(0deg, rgba(10, 16, 18, 0.8) 0%, rgba(10, 16, 18, 0.06) 52%);
 }
 
 .hero-content {
   position: relative;
   z-index: 3;
-  width: min(980px, calc(100% - 36px));
+  width: min(680px, calc(100% - 36px));
   margin: 0 auto;
   padding: 118px 0 52px;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.48);
 }
 
 .eyebrow {
@@ -1028,21 +1035,23 @@ figcaption {
   }
 
   .hero-image {
-    right: 12px;
-    width: min(42vw, 400px);
+    right: 18px;
+    bottom: 62px;
+    width: min(34vw, 360px);
+    max-height: calc(100% - 128px);
     object-position: center bottom;
   }
 
   .hero-secondary-image {
     left: 18px;
-    bottom: 70px;
-    width: min(32vw, 300px);
-    opacity: 0.82;
+    bottom: 74px;
+    width: min(36vw, 330px);
+    opacity: 0.86;
   }
 
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(10, 16, 18, 0.76), rgba(10, 16, 18, 0.48)),
+      linear-gradient(90deg, rgba(10, 16, 18, 0.46), rgba(10, 16, 18, 0.84) 36%, rgba(10, 16, 18, 0.62)),
       linear-gradient(0deg, rgba(10, 16, 18, 0.78), rgba(10, 16, 18, 0.08) 54%);
   }
 
@@ -1149,6 +1158,7 @@ figcaption {
     inset: 70px auto auto 50%;
     width: min(76vw, 360px);
     height: 320px;
+    max-height: none;
     transform: translateX(-50%);
   }
 
