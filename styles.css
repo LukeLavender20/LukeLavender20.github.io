@@ -83,13 +83,14 @@ nav a:focus-visible {
 
 .hero {
   position: relative;
-  min-height: 72svh;
+  min-height: clamp(720px, 86svh, 900px);
   display: grid;
-  align-items: end;
+  align-items: center;
   overflow: hidden;
   color: #fff;
   background:
-    radial-gradient(circle at 78% 42%, rgba(47, 98, 134, 0.28), transparent 36%),
+    radial-gradient(circle at 82% 40%, rgba(47, 98, 134, 0.24), transparent 34%),
+    linear-gradient(135deg, rgba(28, 41, 45, 0.72), rgba(12, 18, 20, 0.98) 54%, rgba(14, 24, 27, 0.96)),
     #101719;
 }
 
@@ -101,47 +102,49 @@ nav a:focus-visible {
 }
 
 .hero-image {
-  z-index: 0;
-  inset: auto clamp(18px, 4vw, 56px) clamp(28px, 5vh, 52px) auto;
+  z-index: 1;
+  inset: auto clamp(24px, 5vw, 76px) clamp(46px, 7vh, 84px) auto;
   left: auto;
-  width: clamp(260px, 31vw, 430px);
-  height: auto;
-  max-height: calc(100% - 110px);
+  width: clamp(310px, 30vw, 450px);
+  height: clamp(460px, 64svh, 670px);
+  max-height: none;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
   background: #101719;
-  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.42);
-  object-fit: contain;
-  object-position: center bottom;
-  filter: saturate(0.98) contrast(1.02);
+  box-shadow: 0 30px 72px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+  object-position: center center;
+  filter: saturate(0.98) contrast(1.04);
 }
 
 .hero-secondary-image {
   z-index: 0;
-  inset: auto auto clamp(52px, 8vh, 90px) clamp(18px, 4vw, 56px);
-  width: clamp(300px, 34vw, 480px);
-  height: auto;
+  inset: auto clamp(300px, 33vw, 470px) clamp(112px, 15vh, 162px) auto;
+  width: clamp(270px, 25vw, 390px);
+  height: clamp(250px, 31svh, 360px);
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
   background: #101719;
-  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.42);
-  filter: saturate(0.98) contrast(1.05);
-  opacity: 0.94;
+  box-shadow: 0 24px 62px rgba(0, 0, 0, 0.48);
+  object-fit: cover;
+  object-position: center center;
+  filter: saturate(0.96) contrast(1.06);
+  opacity: 0.92;
 }
 
 .hero-shade {
-  z-index: 1;
+  z-index: 2;
   background:
-    linear-gradient(90deg, rgba(10, 16, 18, 0.38) 0%, rgba(10, 16, 18, 0.84) 34%, rgba(10, 16, 18, 0.84) 62%, rgba(10, 16, 18, 0.22) 100%),
-    linear-gradient(0deg, rgba(10, 16, 18, 0.8) 0%, rgba(10, 16, 18, 0.06) 52%);
+    linear-gradient(90deg, rgba(10, 16, 18, 0.9) 0%, rgba(10, 16, 18, 0.76) 42%, rgba(10, 16, 18, 0.24) 72%, rgba(10, 16, 18, 0.08) 100%),
+    linear-gradient(0deg, rgba(10, 16, 18, 0.72) 0%, rgba(10, 16, 18, 0.08) 58%);
 }
 
 .hero-content {
   position: relative;
   z-index: 3;
-  width: min(680px, calc(100% - 36px));
-  margin: 0 auto;
-  padding: 118px 0 52px;
+  width: min(610px, calc(100% - 36px));
+  margin: 0 auto 0 clamp(18px, 7vw, 92px);
+  padding: clamp(132px, 15vh, 178px) 0 clamp(58px, 8vh, 88px);
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.48);
 }
 
@@ -1031,28 +1034,37 @@ figcaption {
   }
 
   .hero {
-    min-height: 74svh;
+    min-height: clamp(700px, 84svh, 860px);
   }
 
   .hero-image {
     right: 18px;
-    bottom: 62px;
-    width: min(34vw, 360px);
-    max-height: calc(100% - 128px);
-    object-position: center bottom;
+    bottom: 56px;
+    width: min(34vw, 340px);
+    height: min(52svh, 500px);
+    max-height: none;
+    object-position: center center;
   }
 
   .hero-secondary-image {
-    left: 18px;
-    bottom: 74px;
-    width: min(36vw, 330px);
+    right: min(30vw, 320px);
+    left: auto;
+    bottom: 122px;
+    width: min(30vw, 280px);
+    height: min(28svh, 265px);
     opacity: 0.86;
   }
 
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(10, 16, 18, 0.46), rgba(10, 16, 18, 0.84) 36%, rgba(10, 16, 18, 0.62)),
-      linear-gradient(0deg, rgba(10, 16, 18, 0.78), rgba(10, 16, 18, 0.08) 54%);
+      linear-gradient(90deg, rgba(10, 16, 18, 0.9) 0%, rgba(10, 16, 18, 0.76) 48%, rgba(10, 16, 18, 0.24) 82%),
+      linear-gradient(0deg, rgba(10, 16, 18, 0.72), rgba(10, 16, 18, 0.08) 58%);
+  }
+
+  .hero-content {
+    width: min(580px, calc(100% - 36px));
+    margin-left: clamp(18px, 5vw, 48px);
+    padding-top: 150px;
   }
 
   .proof-strip,
@@ -1146,7 +1158,8 @@ figcaption {
 
   .hero-content {
     width: min(100% - 28px, 980px);
-    padding-top: 360px;
+    margin: 0 auto;
+    padding-top: 390px;
     padding-bottom: 36px;
   }
 
@@ -1155,9 +1168,9 @@ figcaption {
   }
 
   .hero-image {
-    inset: 70px auto auto 50%;
-    width: min(76vw, 360px);
-    height: 320px;
+    inset: 86px auto auto 50%;
+    width: min(78vw, 340px);
+    height: 300px;
     max-height: none;
     transform: translateX(-50%);
   }
