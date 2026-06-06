@@ -112,21 +112,21 @@ nav a:focus-visible {
 }
 
 .hero-secondary-image {
-  z-index: 1;
-  inset: auto auto clamp(70px, 11vh, 132px) clamp(18px, 5vw, 82px);
-  width: clamp(150px, 20vw, 290px);
+  z-index: 2;
+  inset: auto auto clamp(46px, 8vh, 84px) clamp(18px, 4vw, 58px);
+  width: clamp(230px, 29vw, 390px);
   height: auto;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
-  filter: saturate(0.92) contrast(1.05);
-  opacity: 0.82;
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.42);
+  filter: saturate(0.96) contrast(1.06);
+  opacity: 0.9;
 }
 
 .hero-shade {
-  z-index: 2;
+  z-index: 1;
   background:
-    linear-gradient(90deg, rgba(10, 16, 18, 0.96) 0%, rgba(10, 16, 18, 0.84) 48%, rgba(10, 16, 18, 0.22) 100%),
+    linear-gradient(90deg, rgba(10, 16, 18, 0.72) 0%, rgba(10, 16, 18, 0.78) 44%, rgba(10, 16, 18, 0.22) 100%),
     linear-gradient(0deg, rgba(10, 16, 18, 0.8) 0%, rgba(10, 16, 18, 0.06) 52%);
 }
 
@@ -1035,14 +1035,14 @@ figcaption {
 
   .hero-secondary-image {
     left: 18px;
-    bottom: 88px;
-    width: min(22vw, 210px);
-    opacity: 0.58;
+    bottom: 70px;
+    width: min(32vw, 300px);
+    opacity: 0.82;
   }
 
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(10, 16, 18, 0.9), rgba(10, 16, 18, 0.45)),
+      linear-gradient(90deg, rgba(10, 16, 18, 0.76), rgba(10, 16, 18, 0.48)),
       linear-gradient(0deg, rgba(10, 16, 18, 0.78), rgba(10, 16, 18, 0.08) 54%);
   }
 
