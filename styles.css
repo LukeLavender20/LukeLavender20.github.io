@@ -83,12 +83,13 @@ nav a:focus-visible {
 
 .hero {
   position: relative;
-  min-height: clamp(720px, 86svh, 900px);
+  min-height: clamp(620px, 76svh, 780px);
   overflow: hidden;
   color: #fff;
   background:
-    radial-gradient(circle at 82% 40%, rgba(47, 98, 134, 0.24), transparent 34%),
-    linear-gradient(135deg, rgba(28, 41, 45, 0.72), rgba(12, 18, 20, 0.98) 54%, rgba(14, 24, 27, 0.96)),
+    radial-gradient(circle at 82% 32%, rgba(47, 98, 134, 0.18), transparent 32%),
+    radial-gradient(circle at 32% 70%, rgba(32, 134, 108, 0.12), transparent 30%),
+    linear-gradient(135deg, rgba(28, 41, 45, 0.72), rgba(12, 18, 20, 0.98) 58%, rgba(14, 24, 27, 0.96)),
     #101719;
 }
 
@@ -100,79 +101,36 @@ nav a:focus-visible {
 .hero-shade {
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(10, 16, 18, 0.9) 0%, rgba(10, 16, 18, 0.74) 42%, rgba(10, 16, 18, 0.24) 74%, rgba(10, 16, 18, 0.1) 100%),
-    linear-gradient(0deg, rgba(10, 16, 18, 0.72) 0%, rgba(10, 16, 18, 0.08) 58%);
+    linear-gradient(90deg, rgba(10, 16, 18, 0.9) 0%, rgba(10, 16, 18, 0.7) 46%, rgba(10, 16, 18, 0.3) 100%),
+    linear-gradient(0deg, rgba(10, 16, 18, 0.72) 0%, rgba(10, 16, 18, 0.06) 62%);
 }
 
 .hero-inner {
   position: relative;
   z-index: 3;
   display: grid;
-  grid-template-columns: minmax(390px, 0.92fr) minmax(500px, 0.9fr);
+  grid-template-columns: minmax(390px, 0.95fr) minmax(380px, 0.78fr);
   align-items: center;
-  gap: clamp(36px, 5vw, 82px);
-  width: min(1240px, calc(100% - 40px));
+  gap: clamp(34px, 4.8vw, 74px);
+  width: min(1220px, calc(100% - 40px));
   min-height: inherit;
   margin: 0 auto;
-  padding: clamp(132px, 15vh, 178px) 0 clamp(58px, 8vh, 88px);
+  padding: clamp(126px, 13vh, 158px) 0 clamp(46px, 7vh, 72px);
 }
 
-.hero-visual {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: min(560px, 44vw);
-  min-height: clamp(470px, 62svh, 640px);
-  margin-left: auto;
-}
-
-.hero-image {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: clamp(360px, 50svh, 520px);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 12px;
-  background: #101719;
-  object-fit: cover;
-  object-position: center 56%;
-  z-index: 2;
-  max-height: none;
-  transform: none;
-  box-shadow: 0 32px 78px rgba(0, 0, 0, 0.58);
-  filter: saturate(0.96) contrast(1.08) brightness(0.88);
-}
-
-.hero-visual::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  border-radius: 12px;
-  pointer-events: none;
-  background:
-    linear-gradient(180deg, rgba(6, 11, 12, 0.08), rgba(6, 11, 12, 0.18)),
-    linear-gradient(90deg, rgba(6, 11, 12, 0.18), transparent 38%, rgba(6, 11, 12, 0.1));
-}
-
-.hero-proof-card {
-  position: absolute;
-  right: clamp(16px, 2vw, 24px);
-  bottom: clamp(16px, 2vw, 24px);
-  z-index: 4;
-  width: min(330px, calc(100% - 32px));
+.hero-brief {
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 10px;
-  padding: 16px 18px;
-  background: rgba(8, 14, 16, 0.78);
-  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.38);
-  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: clamp(24px, 3vw, 34px);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.085), rgba(255, 255, 255, 0.025)),
+    rgba(8, 14, 16, 0.62);
+  box-shadow: 0 28px 72px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(12px);
 }
 
-.hero-proof-card span {
-  display: block;
-  margin-bottom: 7px;
+.brief-label {
+  margin: 0 0 10px;
   color: var(--green);
   font-size: 0.76rem;
   font-weight: 850;
@@ -180,11 +138,55 @@ nav a:focus-visible {
   text-transform: uppercase;
 }
 
-.hero-proof-card strong {
+.hero-brief h2 {
+  margin: 0 0 24px;
+  color: #fff;
+  font-size: clamp(1.55rem, 2.4vw, 2.35rem);
+  line-height: 1.08;
+}
+
+.brief-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.brief-grid div {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 14px;
+}
+
+.brief-grid span {
+  display: block;
+  margin-bottom: 5px;
+  color: #9ed6c7;
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.brief-grid strong {
   display: block;
   color: #fff;
-  font-size: clamp(1.02rem, 1.5vw, 1.22rem);
-  line-height: 1.25;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.brief-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.brief-tags span {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  padding: 8px 10px;
+  color: #e9f5f2;
+  font-size: 0.86rem;
+  font-weight: 760;
+  line-height: 1;
 }
 
 .hero-content {
@@ -1084,29 +1086,14 @@ figcaption {
 
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
     width: min(100% - 36px, 840px);
     min-height: auto;
     padding: 128px 0 54px;
   }
 
-  .hero-visual {
-    display: flex;
-    justify-content: center;
-    width: min(86vw, 620px);
-    min-height: auto;
-    margin: 0 auto;
-    order: -1;
-  }
-
-  .hero-image {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    height: min(44svh, 390px);
-    max-height: none;
-    transform: none;
-    object-position: center 56%;
+  .hero-brief {
+    max-width: 760px;
   }
 
   .hero-shade {
@@ -1220,32 +1207,24 @@ figcaption {
     display: block;
     width: min(100% - 28px, 980px);
     min-height: auto;
-    padding: 390px 0 0;
+    padding: 110px 0 0;
   }
 
-  .hero-visual {
-    position: absolute;
-    inset: 0;
-    display: block;
-    width: auto;
-    min-height: 0;
+  .hero-brief {
+    margin-top: 28px;
+    padding: 20px;
   }
 
-  .hero-visual::after {
-    display: none;
+  .hero-brief h2 {
+    font-size: 1.48rem;
   }
 
-  .hero-image {
-    position: absolute;
-    inset: 86px auto auto 50%;
-    width: min(86vw, 360px);
-    height: 260px;
-    max-height: none;
-    transform: translateX(-50%);
+  .brief-grid strong {
+    font-size: 0.95rem;
   }
 
-  .hero-proof-card {
-    display: none;
+  .brief-tags span {
+    font-size: 0.82rem;
   }
 
   .hero-shade {
