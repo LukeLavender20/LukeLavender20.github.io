@@ -310,8 +310,24 @@ h3 {
 }
 
 .feature-card.photo-priority img {
-  height: clamp(180px, 23vw, 300px);
+  height: auto;
   object-position: center;
+}
+
+.feature-card.wide.photo-priority {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  align-items: center;
+}
+
+.feature-card.photo-priority .image-link {
+  background: #101719;
+}
+
+.feature-card.photo-priority img {
+  max-height: none;
+  padding: 10px;
 }
 
 .media-card .video-embed {
@@ -827,14 +843,18 @@ figcaption {
 
   .proof-strip,
   .intro,
-	  .feature-grid,
-	  .lab-layout,
-	  .timeline,
-	  .focus-grid,
-	  .case-grid,
-	  .doors-grid,
-	  .skill-columns,
+  .feature-grid,
+  .lab-layout,
+  .timeline,
+  .focus-grid,
+  .case-grid,
+  .doors-grid,
+  .skill-columns,
   .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card.wide.photo-priority {
     grid-template-columns: 1fr;
   }
 
