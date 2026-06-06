@@ -507,6 +507,50 @@ figcaption {
   color: var(--muted);
 }
 
+.doors-section {
+  width: 100%;
+  padding-right: clamp(18px, 4vw, 56px);
+  padding-left: clamp(18px, 4vw, 56px);
+  background: var(--dark);
+  color: #fff;
+}
+
+.doors-panel {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.doors-section .eyebrow {
+  color: #9ed6c7;
+}
+
+.doors-section h2 {
+  max-width: 980px;
+}
+
+.doors-section .case-lead {
+  max-width: 940px;
+  margin: 22px 0 30px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.doors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.doors-grid article {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.doors-grid p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
 .gallery-section {
   width: 100%;
   padding-right: clamp(18px, 4vw, 56px);
@@ -762,6 +806,7 @@ figcaption {
   .timeline,
   .story-steps,
   .case-grid,
+  .doors-grid,
   .skill-columns,
   .education-grid {
     grid-template-columns: 1fr;
