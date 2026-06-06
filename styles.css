@@ -328,9 +328,18 @@ h3 {
   align-items: center;
 }
 
+.feature-card.proof-focus .image-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #101719;
+}
+
 .feature-card.proof-focus img {
+  width: auto;
+  max-width: 100%;
   height: auto;
-  max-height: min(58vh, 620px);
+  max-height: min(74vh, 780px);
   object-position: center;
 }
 
