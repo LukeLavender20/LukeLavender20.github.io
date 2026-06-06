@@ -450,12 +450,14 @@ h3 {
 
 .proof-layout {
   display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.45fr);
   gap: 18px;
+  align-items: start;
 }
 
 .fieldnation-panel {
   display: grid;
-  grid-template-columns: minmax(280px, 0.7fr) minmax(300px, 1fr);
+  grid-template-columns: 1fr;
   align-items: center;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -468,7 +470,8 @@ h3 {
 
 .fieldnation-shot {
   display: flex;
-  min-height: clamp(360px, 50vw, 650px);
+  min-height: 0;
+  aspect-ratio: 4 / 3;
   align-items: center;
   justify-content: center;
   background: #101719;
@@ -479,12 +482,12 @@ h3 {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: min(72vh, 760px);
+  max-height: clamp(210px, 22vw, 280px);
   padding: 8px;
 }
 
 .fieldnation-copy {
-  padding: clamp(18px, 3vw, 34px);
+  padding: clamp(16px, 2vw, 22px);
 }
 
 .proof-visual-band {
@@ -507,7 +510,7 @@ h3 {
 
 .proof-visual .image-link {
   display: flex;
-  min-height: clamp(300px, 36vw, 520px);
+  min-height: clamp(270px, 32vw, 455px);
   align-items: center;
   justify-content: center;
   background: #101719;
@@ -518,7 +521,7 @@ h3 {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: clamp(300px, 36vw, 520px);
+  max-height: clamp(270px, 32vw, 455px);
   padding: 8px;
   object-fit: contain;
 }
@@ -541,6 +544,7 @@ h3 {
 }
 
 .proof-notes {
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px 20px;
@@ -1044,6 +1048,7 @@ figcaption {
 
   .proof-strip,
   .intro,
+  .proof-layout,
   .feature-grid,
   .fieldnation-panel,
   .proof-visual-band,
@@ -1085,11 +1090,20 @@ figcaption {
   }
 
   .fieldnation-shot {
-    min-height: min(64vh, 620px);
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .fieldnation-shot img {
+    max-height: min(40vh, 340px);
   }
 
   .proof-visual .image-link {
-    min-height: min(58vh, 520px);
+    min-height: min(48vh, 430px);
+  }
+
+  .proof-visual img {
+    max-height: min(48vh, 430px);
   }
 
   .intro > p {
@@ -1159,6 +1173,27 @@ figcaption {
 
   .section {
     width: min(100% - 28px, 1180px);
+  }
+
+  .proof-visual-band {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 6px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .proof-visual {
+    min-width: min(82vw, 360px);
+    scroll-snap-align: start;
+  }
+
+  .proof-visual .image-link {
+    min-height: 240px;
+  }
+
+  .proof-visual img {
+    max-height: 240px;
   }
 
   .proof-notes {
