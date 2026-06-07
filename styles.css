@@ -73,6 +73,10 @@ nav {
 }
 
 nav a {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  padding: 4px 0;
   text-decoration: none;
   opacity: 0.88;
 }
@@ -132,7 +136,7 @@ nav a:focus-visible {
 
 .brief-label {
   margin: 0 0 10px;
-  color: var(--green);
+  color: #9ed6c7;
   font-size: 0.76rem;
   font-weight: 850;
   letter-spacing: 0;
@@ -889,6 +893,10 @@ figcaption {
   padding: 0 18px 18px;
 }
 
+.gallery-details:not([open]) .evidence-grid {
+  display: none;
+}
+
 .evidence-grid figure {
   overflow: hidden;
   margin-bottom: 0;
@@ -1515,30 +1523,35 @@ figcaption {
 
 @media (max-width: 560px) {
   .site-header {
-    align-items: center;
-    gap: 10px;
-    padding: 10px max(14px, env(safe-area-inset-right)) 10px max(14px, env(safe-area-inset-left));
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 7px;
+    padding: 8px max(14px, env(safe-area-inset-right)) 9px max(14px, env(safe-area-inset-left));
     background: rgba(16, 23, 25, 0.96);
   }
 
   .brand {
-    flex: 0 0 auto;
-    max-width: 64px;
-    font-size: 0.82rem;
+    max-width: none;
+    font-size: 0.84rem;
     line-height: 1.1;
   }
 
   nav {
-    flex: 1 1 auto;
+    width: 100%;
     max-width: none;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    overflow-x: auto;
-    gap: 10px;
-    padding: 2px 0;
-    font-size: 0.8rem;
+    overflow-x: visible;
+    gap: 4px 9px;
+    padding: 0;
+    font-size: 0.74rem;
     scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
+  }
+
+  nav a {
+    min-height: 34px;
+    padding: 6px 0;
   }
 
   nav::-webkit-scrollbar {
@@ -1546,7 +1559,7 @@ figcaption {
   }
 
   nav a {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     white-space: nowrap;
   }
 
@@ -1566,7 +1579,7 @@ figcaption {
     display: block;
     width: min(100% - 28px, 980px);
     min-height: auto;
-    padding: 92px 0 0;
+    padding: 138px 0 0;
   }
 
   .hero-brief {
@@ -1625,16 +1638,17 @@ figcaption {
   }
 
   .proof-visual-band {
-    display: flex;
-    overflow-x: auto;
-    gap: 12px;
-    padding-bottom: 6px;
-    scroll-snap-type: x mandatory;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: visible;
+    gap: 14px;
+    padding-bottom: 0;
+    scroll-snap-type: none;
   }
 
   .proof-visual {
-    min-width: min(82vw, 360px);
-    scroll-snap-align: start;
+    min-width: 0;
+    scroll-snap-align: none;
   }
 
   .proof-visual .image-link {
@@ -1668,7 +1682,7 @@ figcaption {
 
   .photo-hero {
     width: min(100% - 28px, 980px);
-    padding-top: 104px;
+    padding-top: 132px;
   }
 
   .photo-hero h1 {

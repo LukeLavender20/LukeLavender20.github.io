@@ -23,8 +23,8 @@
       <image:title>Luke Lavender retail rack deployment proof</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://lukelavender.com/assets/proof/datacenter-server-room-wide.jpg</image:loc>
-      <image:title>Luke Lavender datacenter-style server room proof</image:title>
+      <image:loc>https://lukelavender.com/assets/proof/data-center-server-room-wide.jpg</image:loc>
+      <image:title>Luke Lavender Data Center style server room proof</image:title>
     </image:image>
     <image:image>
       <image:loc>https://lukelavender.com/assets/proof/fieldnation-ratings-proof.jpg</image:loc>
@@ -125,24 +125,24 @@
       <image:title>Production rack NetApp and server stack proof</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://lukelavender.com/assets/proof/datacenter-server-room-wide.jpg</image:loc>
-      <image:title>Datacenter-style server room rack proof</image:title>
+      <image:loc>https://lukelavender.com/assets/proof/data-center-server-room-wide.jpg</image:loc>
+      <image:title>Data Center style server room rack proof</image:title>
     </image:image>
     <image:image>
       <image:loc>https://lukelavender.com/assets/proof/hp-proliant-server-rack-detail.jpg</image:loc>
       <image:title>HP ProLiant server rack detail proof</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://lukelavender.com/assets/proof/datacenter-cable-tray-rack-context.jpg</image:loc>
-      <image:title>Datacenter cable tray and rack room context proof</image:title>
+      <image:loc>https://lukelavender.com/assets/proof/data-center-cable-tray-rack-context.jpg</image:loc>
+      <image:title>Data Center cable tray and rack room context proof</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://lukelavender.com/assets/proof/datacenter-dell-emc-rack.jpg</image:loc>
+      <image:loc>https://lukelavender.com/assets/proof/data-center-dell-emc-rack.jpg</image:loc>
       <image:title>Dell EMC rack and server hardware proof</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://lukelavender.com/assets/proof/datacenter-laptop-portrait.jpg</image:loc>
-      <image:title>Datacenter rack-side support portrait</image:title>
+      <image:loc>https://lukelavender.com/assets/proof/data-center-laptop-portrait.jpg</image:loc>
+      <image:title>Data Center rack-side support portrait</image:title>
     </image:image>
     <image:image>
       <image:loc>https://lukelavender.com/assets/proof/ibm-rack-2020-luke.jpg</image:loc>
@@ -182,5 +182,11 @@
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lukelavender.com/docs/Luke_Lavender_Resume.docx</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
