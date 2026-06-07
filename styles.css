@@ -873,6 +873,12 @@ figcaption {
   font-weight: 850;
 }
 
+.light-button {
+  border-color: var(--line);
+  color: var(--blue);
+  background: #fff;
+}
+
 .evidence-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -911,6 +917,165 @@ figcaption {
   padding: 12px 14px;
   font-size: 0.92rem;
   font-weight: 750;
+}
+
+.photo-body {
+  background: #edf1ee;
+}
+
+.solid-header {
+  color: #fff;
+  background: rgba(16, 23, 25, 0.96);
+  box-shadow: 0 10px 30px rgba(16, 23, 25, 0.16);
+}
+
+.photo-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+  gap: clamp(28px, 5vw, 74px);
+  align-items: end;
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(128px, 16vh, 176px) 0 clamp(42px, 7vw, 78px);
+}
+
+.photo-hero h1 {
+  max-width: 900px;
+  margin-bottom: 18px;
+  color: var(--dark);
+  font-size: clamp(2.6rem, 7vw, 5.6rem);
+  line-height: 0.98;
+}
+
+.photo-hero p:not(.eyebrow) {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: clamp(1.08rem, 2vw, 1.32rem);
+}
+
+.photo-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.photo-actions a {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 13px 15px;
+  color: var(--blue);
+  background: #fff;
+  font-weight: 850;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(16, 23, 25, 0.08);
+}
+
+.photo-band {
+  width: 100%;
+  padding: clamp(42px, 6vw, 76px) clamp(18px, 4vw, 56px);
+  background: #fff;
+}
+
+.photo-band.alt-band {
+  background: #e7eeeb;
+}
+
+.photo-heading,
+.photo-grid,
+.photo-close {
+  width: min(1180px, 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.photo-heading {
+  margin-bottom: 26px;
+}
+
+.photo-heading h2 {
+  max-width: 860px;
+  margin-bottom: 0;
+  font-size: clamp(1.9rem, 4vw, 3.1rem);
+  line-height: 1.02;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.photo-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.photo-card a {
+  display: grid;
+  min-height: 300px;
+  place-items: center;
+  padding: 10px;
+  background: #11191c;
+}
+
+.photo-card img {
+  width: auto;
+  max-width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+.photo-card.wide-photo {
+  grid-column: span 2;
+}
+
+.photo-card.wide-photo img {
+  max-height: 430px;
+}
+
+.photo-card.tall-photo img {
+  max-height: 680px;
+}
+
+.photo-card figcaption {
+  padding: 15px 16px 17px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.photo-card figcaption strong,
+.photo-card figcaption span {
+  display: block;
+}
+
+.photo-card figcaption strong {
+  margin-bottom: 5px;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 850;
+}
+
+.photo-card figcaption span {
+  color: var(--muted);
+}
+
+.photo-close {
+  padding: clamp(42px, 6vw, 72px) 0;
+}
+
+.photo-close h2 {
+  margin-bottom: 18px;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.photo-close-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .lab-section {
@@ -1136,6 +1301,7 @@ figcaption {
 
   .proof-strip,
   .intro,
+  .photo-hero,
   .proof-layout,
   .feature-grid,
   .fieldnation-panel,
@@ -1172,6 +1338,14 @@ figcaption {
 
   .evidence-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .photo-card.wide-photo {
+    grid-column: span 1;
+  }
+
+  .photo-card a {
+    min-height: 260px;
   }
 
   .lab-details {
@@ -1319,5 +1493,32 @@ figcaption {
 
   .evidence-grid {
     grid-template-columns: 1fr;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-hero {
+    width: min(100% - 28px, 980px);
+    padding-top: 132px;
+  }
+
+  .photo-hero h1 {
+    font-size: clamp(2.35rem, 14vw, 4rem);
+  }
+
+  .photo-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-card a {
+    min-height: 220px;
+  }
+
+  .photo-card img,
+  .photo-card.tall-photo img,
+  .photo-card.wide-photo img {
+    max-height: 72vh;
   }
 }
