@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>http://lukelavender.com/</loc>
+    <loc>https://lukelavender.com/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>http://lukelavender.com/assets/proof/ibm-rack-2020-luke.jpg</image:loc>
+      <image:loc>https://lukelavender.com/assets/proof/ibm-rack-2020-luke.jpg</image:loc>
       <image:title>Luke Lavender beside an IBM rack in 2020</image:title>
     </image:image>
     <image:image>
-      <image:loc>http://lukelavender.com/assets/proof/home-rack-netapp-storage-detail.jpg</image:loc>
+      <image:loc>https://lukelavender.com/assets/proof/home-rack-netapp-storage-detail.jpg</image:loc>
       <image:title>Luke Lavender home rack NetApp storage proof</image:title>
     </image:image>
     <image:image>
-      <image:loc>http://lukelavender.com/assets/proof/rack-cabling-wide.jpg</image:loc>
+      <image:loc>https://lukelavender.com/assets/proof/rack-cabling-wide.jpg</image:loc>
       <image:title>Luke Lavender structured cabling and network rack proof</image:title>
     </image:image>
     <image:image>
-      <image:loc>http://lukelavender.com/assets/proof/fieldnation-ratings-proof.jpg</image:loc>
+      <image:loc>https://lukelavender.com/assets/proof/fieldnation-ratings-proof.jpg</image:loc>
       <image:title>Luke Lavender Field Nation rating proof</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://lukelavender.com/docs/Luke_Lavender_Resume.pdf</loc>
+    <loc>https://lukelavender.com/docs/Luke_Lavender_Resume.pdf</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

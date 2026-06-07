@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://lukelavender.com/sitemap.xml
+Sitemap: https://lukelavender.com/sitemap.xml
