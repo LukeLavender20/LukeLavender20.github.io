@@ -352,6 +352,7 @@ h3 {
 .feature-card,
 .timeline article,
 .highlight-list article,
+.contractor-project-card,
 .skill-columns > div,
 .education-grid article,
 .evidence-grid figure,
@@ -733,6 +734,64 @@ figcaption {
 }
 
 .focus-grid p {
+  color: var(--muted);
+}
+
+.contractor-section {
+  width: 100%;
+  padding-right: clamp(18px, 4vw, 56px);
+  padding-left: clamp(18px, 4vw, 56px);
+  background: #f7f4ee;
+}
+
+.contractor-section .section-heading,
+.contractor-lead,
+.contractor-project-grid {
+  width: min(1180px, 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contractor-lead {
+  max-width: 940px;
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.contractor-project-grid {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 14px;
+}
+
+.contractor-project-card {
+  min-height: 210px;
+  padding: clamp(20px, 2.5vw, 28px);
+  background:
+    linear-gradient(135deg, rgba(36, 59, 85, 0.08), rgba(185, 91, 56, 0.08)),
+    #fff;
+}
+
+.contractor-project-card.featured {
+  grid-row: span 2;
+}
+
+.contractor-project-card:last-child {
+  grid-column: 1 / -1;
+  min-height: 0;
+}
+
+.contractor-project-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--rust);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.contractor-project-card p {
   color: var(--muted);
 }
 
@@ -1439,6 +1498,7 @@ figcaption {
   .feature-grid,
   .fieldnation-panel,
   .proof-visual-band,
+  .contractor-project-grid,
   .lab-layout,
   .timeline,
   .focus-grid,
