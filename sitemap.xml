@@ -19,6 +19,14 @@
       <image:title>Luke Lavender structured cabling and network rack proof</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/retail-rack-deployment-close.jpg</image:loc>
+      <image:title>Luke Lavender retail rack deployment proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/datacenter-server-room-wide.jpg</image:loc>
+      <image:title>Luke Lavender datacenter-style server room proof</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://lukelavender.com/assets/proof/fieldnation-ratings-proof.jpg</image:loc>
       <image:title>Luke Lavender Field Nation rating proof</image:title>
     </image:image>
@@ -49,6 +57,10 @@
       <image:title>Drive-thru network installation proof</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/interior-digital-signage-support.jpg</image:loc>
+      <image:title>Interior digital signage and POS support proof</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://lukelavender.com/assets/proof/arbys-rewire-proof-redacted.jpg</image:loc>
       <image:title>Jackson Ohio Arby's network rewire proof</image:title>
     </image:image>
@@ -77,12 +89,56 @@
       <image:title>Server and network rack support proof</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/retail-rack-early-wall-wiring.jpg</image:loc>
+      <image:title>Retail rack early site placement proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/retail-rack-utility-room-wide.jpg</image:loc>
+      <image:title>Retail rack utility room deployment proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/retail-rack-deployment-close.jpg</image:loc>
+      <image:title>Retail rack labeled POS switch port proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/retail-rack-site-aisle-cutover.jpg</image:loc>
+      <image:title>Retail rack store-floor cutover proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/retail-rack-cutover-detail.jpg</image:loc>
+      <image:title>Retail rack cutover detail and closeout proof</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://lukelavender.com/assets/proof/home-rack-netapp-lab.jpg</image:loc>
       <image:title>Full home rack and NetApp lab proof</image:title>
     </image:image>
     <image:image>
       <image:loc>https://lukelavender.com/assets/proof/home-rack-netapp-storage-detail.jpg</image:loc>
       <image:title>Home rack storage detail proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/server-room-network-rack-2020.jpg</image:loc>
+      <image:title>Server room network rack proof from 2020</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/production-rack-netapp-server-stack.jpg</image:loc>
+      <image:title>Production rack NetApp and server stack proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/datacenter-server-room-wide.jpg</image:loc>
+      <image:title>Datacenter-style server room rack proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/hp-proliant-server-rack-detail.jpg</image:loc>
+      <image:title>HP ProLiant server rack detail proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/datacenter-cable-tray-rack-context.jpg</image:loc>
+      <image:title>Datacenter cable tray and rack room context proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/datacenter-dell-emc-rack.jpg</image:loc>
+      <image:title>Dell EMC rack and server hardware proof</image:title>
     </image:image>
     <image:image>
       <image:loc>https://lukelavender.com/assets/proof/datacenter-laptop-portrait.jpg</image:loc>
