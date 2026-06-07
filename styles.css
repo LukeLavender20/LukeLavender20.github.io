@@ -22,6 +22,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   background: var(--paper);
   color: var(--ink);
@@ -315,6 +316,7 @@ h3 {
 }
 
 .section {
+  scroll-margin-top: 92px;
   width: min(1180px, calc(100% - 36px));
   margin: 0 auto;
   padding: clamp(42px, 6vw, 72px) 0;
@@ -1188,6 +1190,62 @@ figcaption {
   gap: 14px;
 }
 
+.education-feature {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(300px, 1.1fr);
+  align-items: stretch;
+  overflow: hidden;
+  margin-bottom: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.education-feature-photo {
+  display: flex;
+  min-height: clamp(280px, 34vw, 430px);
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(135deg, rgba(47, 98, 134, 0.18), rgba(16, 23, 25, 0.88)),
+    #101719;
+}
+
+.education-feature-photo img {
+  width: auto;
+  max-width: 100%;
+  max-height: clamp(270px, 33vw, 420px);
+  padding: 10px;
+  object-fit: contain;
+}
+
+.education-feature-copy {
+  align-self: center;
+  padding: clamp(20px, 3vw, 34px);
+}
+
+.education-feature-copy p {
+  color: var(--muted);
+}
+
+.education-feature-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.education-feature-links a {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 9px 12px;
+  color: var(--blue);
+  background: #f8faf7;
+  font-weight: 850;
+  text-decoration: none;
+}
+
 .skill-columns > div,
 .education-grid article {
   padding: 20px;
@@ -1312,6 +1370,7 @@ figcaption {
   .case-grid,
   .doors-grid,
   .skill-columns,
+  .education-feature,
   .education-grid {
     grid-template-columns: 1fr;
   }
@@ -1389,17 +1448,39 @@ figcaption {
 
 @media (max-width: 560px) {
   .site-header {
-    gap: 14px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px max(14px, env(safe-area-inset-right)) 10px max(14px, env(safe-area-inset-left));
+    background: rgba(16, 23, 25, 0.96);
   }
 
   .brand {
-    max-width: 95px;
+    flex: 0 0 auto;
+    max-width: 64px;
+    font-size: 0.82rem;
     line-height: 1.1;
   }
 
   nav {
-    gap: 8px 12px;
-    font-size: 0.88rem;
+    flex: 1 1 auto;
+    max-width: none;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 2px 0;
+    font-size: 0.8rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
 
   .hero-content {
@@ -1418,7 +1499,7 @@ figcaption {
     display: block;
     width: min(100% - 28px, 980px);
     min-height: auto;
-    padding: 110px 0 0;
+    padding: 92px 0 0;
   }
 
   .hero-brief {
@@ -1444,13 +1525,32 @@ figcaption {
   }
 
   .hero-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: stretch;
-    flex-direction: column;
-    max-width: 280px;
+    max-width: none;
+    gap: 8px;
   }
 
   .button {
     width: 100%;
+    min-height: 42px;
+    padding: 9px 10px;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions .primary,
+  .hero-actions a[href^="mailto"] {
+    grid-column: 1 / -1;
+  }
+
+  .hero-actions a[href^="tel"] {
+    order: 6;
+  }
+
+  .hero-actions a[href^="mailto"] {
+    order: 7;
   }
 
   .section {
@@ -1501,15 +1601,21 @@ figcaption {
 
   .photo-hero {
     width: min(100% - 28px, 980px);
-    padding-top: 132px;
+    padding-top: 104px;
   }
 
   .photo-hero h1 {
-    font-size: clamp(2.35rem, 14vw, 4rem);
+    font-size: clamp(2.25rem, 9.8vw, 3.05rem);
+    line-height: 1;
   }
 
   .photo-actions {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .photo-actions a {
+    padding: 11px 12px;
+    text-align: center;
   }
 
   .photo-card a {
@@ -1519,6 +1625,18 @@ figcaption {
   .photo-card img,
   .photo-card.tall-photo img,
   .photo-card.wide-photo img {
+    max-height: 62vh;
+  }
+
+  .education-feature-photo {
+    min-height: 230px;
+  }
+
+  .education-feature-photo img {
     max-height: 72vh;
+  }
+
+  .education-feature-copy {
+    padding: 20px;
   }
 }
