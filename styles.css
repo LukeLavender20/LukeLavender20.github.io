@@ -1083,7 +1083,8 @@ figcaption {
   box-shadow: var(--shadow);
 }
 
-.photo-card a {
+.photo-card > a,
+.photo-card .video-frame {
   display: grid;
   min-height: 300px;
   place-items: center;
@@ -1091,19 +1092,34 @@ figcaption {
   background: #11191c;
 }
 
-.photo-card img {
+.photo-card img,
+.photo-card video {
   width: auto;
   max-width: 100%;
   max-height: 520px;
   object-fit: contain;
 }
 
+.photo-card video {
+  width: 100%;
+  background: #070b0c;
+}
+
 .photo-card.wide-photo {
   grid-column: span 2;
 }
 
-.photo-card.wide-photo img {
+.photo-card.wide-photo img,
+.photo-card.wide-photo video {
   max-height: 430px;
+}
+
+.photo-card.video-card {
+  grid-column: span 2;
+}
+
+.photo-card.video-card .video-frame {
+  min-height: 360px;
 }
 
 .photo-card.tall-photo img {
@@ -1287,6 +1303,44 @@ figcaption {
 .rack-note {
   margin-top: 12px;
   font-size: 0.94rem;
+}
+
+.lab-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.lab-proof-grid figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.lab-proof-grid a {
+  display: grid;
+  min-height: 185px;
+  place-items: center;
+  padding: 8px;
+  background: #101719;
+}
+
+.lab-proof-grid img {
+  width: auto;
+  max-width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.lab-proof-grid figcaption {
+  padding: 10px 11px 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 650;
+  line-height: 1.35;
 }
 
 .highlights {
@@ -1534,16 +1588,22 @@ figcaption {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .photo-card.wide-photo {
+  .photo-card.wide-photo,
+  .photo-card.video-card {
     grid-column: span 1;
   }
 
-  .photo-card a {
+  .photo-card > a,
+  .photo-card .video-frame {
     min-height: 260px;
   }
 
   .lab-details {
     grid-template-columns: 1fr;
+  }
+
+  .lab-proof-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .proof-strip div {
@@ -1759,13 +1819,32 @@ figcaption {
     text-align: center;
   }
 
-  .photo-card a {
+  .photo-card > a,
+  .photo-card .video-frame {
     min-height: 220px;
   }
 
   .photo-card img,
+  .photo-card video,
   .photo-card.tall-photo img,
-  .photo-card.wide-photo img {
+  .photo-card.wide-photo img,
+  .photo-card.wide-photo video {
+    max-height: 62vh;
+  }
+
+  .photo-card.video-card {
+    grid-column: span 1;
+  }
+
+  .lab-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-proof-grid a {
+    min-height: 220px;
+  }
+
+  .lab-proof-grid img {
     max-height: 62vh;
   }
 

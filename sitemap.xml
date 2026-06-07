@@ -15,6 +15,26 @@
       <image:title>Luke Lavender home rack NetApp storage proof</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/home-rack-rear-truenas-nexus-ucs.jpg</image:loc>
+      <image:title>Luke Lavender rear home rack TrueNAS Nexus Fabric Interconnects and UCS proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/home-rack-poweredge-esxi-open-cover.jpg</image:loc>
+      <image:title>Luke Lavender Dell PowerEdge ESXi open-cover proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/home-rack-closed-dell-poweredge-rack.jpg</image:loc>
+      <image:title>Luke Lavender closed Dell PowerEdge home rack proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/home-rack-nexus-fan-cleaning.jpg</image:loc>
+      <image:title>Luke Lavender Nexus 5K fan and rack maintenance proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/data-center-server-lift-sfp-install-poster.jpg</image:loc>
+      <image:title>Luke Lavender Data Center server lift SFP+ install video poster</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://lukelavender.com/assets/proof/rack-cabling-wide.jpg</image:loc>
       <image:title>Luke Lavender structured cabling and network rack proof</image:title>
     </image:image>
@@ -141,6 +161,22 @@
       <image:title>Home rack storage detail proof</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/home-rack-rear-truenas-nexus-ucs.jpg</image:loc>
+      <image:title>Rear home rack TrueNAS Nexus Fabric Interconnects and UCS proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/home-rack-poweredge-esxi-open-cover.jpg</image:loc>
+      <image:title>Dell PowerEdge ESXi open-cover proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/home-rack-closed-dell-poweredge-rack.jpg</image:loc>
+      <image:title>Closed Dell PowerEdge home rack proof</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/home-rack-nexus-fan-cleaning.jpg</image:loc>
+      <image:title>Nexus 5K fan and rack maintenance proof</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://lukelavender.com/assets/proof/server-room-network-rack-2020.jpg</image:loc>
       <image:title>Server room network rack proof from 2020</image:title>
     </image:image>
@@ -167,6 +203,10 @@
     <image:image>
       <image:loc>https://lukelavender.com/assets/proof/data-center-laptop-portrait.jpg</image:loc>
       <image:title>Data Center rack-side support portrait</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lukelavender.com/assets/proof/data-center-server-lift-sfp-install-poster.jpg</image:loc>
+      <image:title>Data Center server lift SFP+ install video poster</image:title>
     </image:image>
     <image:image>
       <image:loc>https://lukelavender.com/assets/proof/ibm-rack-2020-luke.jpg</image:loc>
