@@ -600,6 +600,24 @@ h3 {
   font-size: 1.08rem;
 }
 
+.proof-visual.ibm-proof {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(250px, 0.74fr) minmax(260px, 0.76fr);
+  grid-template-rows: auto;
+}
+
+.proof-visual.ibm-proof .image-link {
+  min-height: clamp(360px, 40vw, 560px);
+}
+
+.proof-visual.ibm-proof img {
+  max-height: clamp(360px, 40vw, 560px);
+}
+
+.proof-visual.ibm-proof figcaption {
+  align-self: center;
+}
+
 .proof-notes {
   grid-column: 1 / -1;
   display: grid;
@@ -1018,7 +1036,8 @@ figcaption {
 }
 
 .links-section .section-heading,
-.link-list {
+.link-list,
+.link-note {
   width: min(1180px, 100%);
   margin-right: auto;
   margin-left: auto;
@@ -1039,6 +1058,19 @@ figcaption {
   color: var(--blue);
   font-weight: 850;
   text-decoration: none;
+}
+
+.link-note {
+  max-width: 780px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: #41535a;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.link-note strong {
+  color: var(--blue);
 }
 
 .site-footer {
@@ -1124,6 +1156,11 @@ figcaption {
 
   .feature-card.wide.proof-focus {
     grid-template-columns: 1fr;
+  }
+
+  .proof-visual.ibm-proof {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(280px, 1fr) auto;
   }
 
   .feature-card.wide,
